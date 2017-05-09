@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#44AAFF"
+    android:padding="7dp"
+
+    >
+
+    <ImageButton
+        android:id="@+id/back_id"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@mipmap/ic_back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="设置"
+        android:textSize="18sp"
+        />
+    1<ImageButton
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:background="#44AAFF"
+    />
+</LinearLayout>
+
+
+<TextView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#8E8E8E"
+    android:textSize="16sp"
+    android:text="@string/intent"
+    android:padding="15dp"
+    />
+
+<LinearLayout
+    android:id="@+id/network_lineaLayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/sylp_background"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textColor="#000000"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/WIFI_only_under_the_network"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            />
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_consumption_under_the_network"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:paddingTop="3dp"
+            />
+    </LinearLayout>
+    <com.ityingli.www.car1.View.SwitchView
+        android:id="@+id/network_button_id"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#EEEEEE"></View>
+<LinearLayout
+    android:id="@+id/blueboot_lineaLayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/sylp_background"
+    >
+
+
+        <TextView
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/automatically_turn_on_the_Bluetooth_connection_vehicle"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            />
+
+        <com.ityingli.www.car1.View.SwitchView
+            android:id="@+id/blueboot_button_id"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+</LinearLayout>
+
+<TextView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#8E8E8E"
+    android:textSize="13sp"
+    android:layout_marginTop="10dp"
+    android:text="@string/language"
+    android:padding="15dp"
+    />
+
+    <LinearLayout
+        android:id="@+id/follow_system_language"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/sylp_background"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/follow_the_system_language"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/allow_system_language_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_correct"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/simplified_chinese"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/sylp_background"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="简体中文"
+            android:padding="15dp"
+            android:layout_marginTop="1dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/simplified_language_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_correct"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chinese"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/sylp_background"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="繁体中文"
+            android:padding="15dp"
+            android:layout_marginTop="1dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/chinese_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_correct"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/English"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/sylp_background"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:padding="15dp"
+            android:layout_marginTop="1dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/englise_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_correct"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+
+
+
+<TextView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#8E8E8E"
+    android:textSize="13sp"
+    android:layout_marginTop="10dp"
+    android:text="@string/about"
+    android:padding="15dp"
+    />
+<TextView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/help_with_feedback"
+    android:padding="15dp"
+    android:layout_marginTop="1dp"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    />
+<TextView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/about_us"
+    android:padding="15dp"
+    android:layout_marginTop="1dp"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    />
+
+<TextView
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#FF3737"
+    android:textSize="15sp"
+    android:layout_marginTop="10dp"
+    android:text="@string/switch_account"
+    android:padding="15dp"
+    android:gravity="center"
+    />
+
+</LinearLayout>

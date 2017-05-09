@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pager.NumberShowFragment"
+    android:background="#44AAFF"
+    android:baselineAligned="false">
+
+    <!--第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+        <!--卡片效果，改用帧布局-->
+        <!---->
+       <FrameLayout
+           android:id="@+id/card"
+           android:layout_width="0dp"
+           android:layout_weight="3"
+           android:layout_height="match_parent"
+           android:background="#FFF">
+
+           <include layout="@layout/card_front" android:id="@+id/card_front"></include>
+           <include layout="@layout/card_bg" android:id="@+id/card_bg"></include>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_marginLeft="1dp"
+            >
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="33.6"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                />
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="水温℃"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--第二行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--折线图+翻转效果-->
+            <FrameLayout
+                android:id="@+id/card_charLinet"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/linechart_textdesc"
+                    layout="@layout/linechart_or_number_number"></include>
+
+                <com.ityingli.www.car1.View.MyLineChartView
+                    android:id="@+id/linechartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:background="#FFF"
+                android:layout_marginTop="1dp"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="56"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="车辆行驶平均速度KM/H"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:background="#FFF"
+                android:layout_marginTop="1dp"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="126"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="持续行驶里程KM"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+         
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="12.22"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="平均油耗L/100KM"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="20.00"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="剩余有量"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

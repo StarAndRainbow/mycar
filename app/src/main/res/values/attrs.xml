@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashboardView">
+        <attr name="excircleColor" format="color"></attr>
+        <attr name="excircle_width" format="dimension"></attr>
+
+        <attr name="insidecircleColor" format="color"></attr>
+        <attr name="insidecircle_width" format="dimension"></attr>
+
+        <attr name="scale_color" format="color"></attr>
+        <attr name="scale_width" format="dimension"></attr>
+        <attr name="scale_length" format="dimension"></attr>
+
+        <attr name="textdesc" format="color"></attr>
+
+        <attr name="textsize_98" format="dimension"></attr>
+        <attr name="text_98_color" format="color"></attr>
+
+        <attr name="targerTextsize" format="dimension"></attr>
+        <attr name="targerText_Color" format="color"></attr>
+    </declare-styleable>
+</resources>

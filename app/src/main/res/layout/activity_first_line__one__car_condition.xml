@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <!--顶部栏-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#44AAFF"
+        android:orientation="horizontal"
+        >
+   <ImageButton
+       android:id="@+id/back_img_btn_id"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:background="@mipmap/ic_back"
+       android:layout_marginLeft="10dp"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:height="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nowCondition_string"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
+        />
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+    
+
+
+
+    <android.support.design.widget.TabLayout
+        style="@style/mytabLayout"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#44AAFF"
+        app:tabIndicatorColor="#FF4081"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#CCC"
+        ></android.support.design.widget.TabLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/nowCondition_viewPager_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+
+</LinearLayout>

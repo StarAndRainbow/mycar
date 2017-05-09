@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:linxin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.ityingli.www.car1.View.DashboardView
+        android:id="@+id/dashboardView_id"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#00aaff"
+        linxin:excircleColor="#4FC0EF"
+        linxin:excircle_width="16dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:id="@+id/first_line_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="3dp"
+
+            >
+            <ImageView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_car_condition"
+                />
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/case_of_car"
+                android:paddingBottom="5dp"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
