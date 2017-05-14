@@ -28,11 +28,16 @@ repositories {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:25.3.0'
+    compile(name: 'sliding_menu_lib', ext: 'aar')
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support:design:25.3.0'
     compile 'com.android.support:support-v4:25.3.0'
-    compile 'com.android.support:design:25.3.0'
-
-    compile(name: 'sliding_menu_lib', ext: 'aar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:25.3.0-alpha1'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/glide-3.6.1.jar')
+    compile files('libs/uk-co-senab-photoview.jar')
 }

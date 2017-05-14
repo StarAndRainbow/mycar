@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 
 import com.ityingli.www.car1.Activitypake.FirstLine_One_CarConditionActivity;
 import com.ityingli.www.car1.Activitypake.MyApplication;
+import com.ityingli.www.car1.Activitypake.RecycleViewActivity;
 import com.ityingli.www.car1.R;
 import com.ityingli.www.car1.View.DashboardView;
 
@@ -24,6 +25,8 @@ public class HomePager extends Fragment implements View.OnClickListener {
     List<Map<String,Object>>  Datas = null;
     DashboardView dashboardView;
     private LinearLayout first_line_one;
+    private LinearLayout carPhoto_ll;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -43,14 +46,13 @@ public class HomePager extends Fragment implements View.OnClickListener {
 
                 for(int i = 0 ;i<=200;i++){
                     try {
-                        Thread.sleep(10);
+                        Thread.sleep(20);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-
                     dashboardView.setUpdataNumber(i);
-                    if(i%2==0)
-                    dashboardView.updataTextNumber(i/2);
+                 /*   if(i%2==0)
+                    dashboardView.updataTextNumber(i/2);*/
                     dashboardView.postInvalidate();
                 }
             }
@@ -74,6 +76,7 @@ public class HomePager extends Fragment implements View.OnClickListener {
      * */
     private void initEvent() {
         first_line_one.setOnClickListener(this);
+        carPhoto_ll.setOnClickListener(this);
     }
 
 
@@ -83,6 +86,7 @@ public class HomePager extends Fragment implements View.OnClickListener {
     private void initView(View view) {
         dashboardView = (DashboardView) view.findViewById(R.id.dashboardView_id);
         first_line_one = (LinearLayout) view.findViewById(R.id.first_line_one);
+        carPhoto_ll = (LinearLayout) view.findViewById(R.id.carPhoto_ll_id);
     }
 
     /*
@@ -94,6 +98,10 @@ public class HomePager extends Fragment implements View.OnClickListener {
             case R.id.first_line_one:
                 Intent intent = new Intent(getContext(), FirstLine_One_CarConditionActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.carPhoto_ll_id:
+                Intent carPhotoIntent = new Intent(getContext(),RecycleViewActivity.class);
+                startActivity(carPhotoIntent);
                 break;
         }
     }

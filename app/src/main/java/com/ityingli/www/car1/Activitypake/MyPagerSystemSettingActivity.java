@@ -12,9 +12,11 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ityingli.www.car1.R;
+import com.ityingli.www.car1.Util.GlideCacheUtil;
 import com.ityingli.www.car1.View.SwitchView;
 
 import java.util.Locale;
@@ -60,6 +62,12 @@ public class MyPagerSystemSettingActivity  extends Activity implements View.OnCl
     private SwitchView blueboot_button;
     private boolean network_isOn;
     private boolean blueboot_isOn2;
+    /*
+    * 缓存
+    * */
+    private LinearLayout cacle;
+    private GlideCacheUtil glideCacheUtil;
+    private TextView cacle_size;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +91,15 @@ public class MyPagerSystemSettingActivity  extends Activity implements View.OnCl
         * 判断选中的语言，把图标设置为显示
         * */
         showCorrent(selectingLanguagePosition);
+        /*
+        * 显示缓存的大少
+        * */
+        showCacheSize();
+    }
+
+    private void showCacheSize() {
+        glideCacheUtil = new GlideCacheUtil();
+        cacle_size.setText(glideCacheUtil.getCacheSize(MyPagerSystemSettingActivity.this));
     }
 
     private void initNumber() {
@@ -106,6 +123,8 @@ public class MyPagerSystemSettingActivity  extends Activity implements View.OnCl
 
         network_linealayout.setOnClickListener(this);
         blueboot_linealayout.setOnClickListener(this);
+
+        cacle.setOnClickListener(this);
     }
 
     private void initView() {
@@ -124,6 +143,10 @@ public class MyPagerSystemSettingActivity  extends Activity implements View.OnCl
         blueboot_linealayout= (LinearLayout) findViewById(R.id.blueboot_lineaLayout_id);
         network_button = (SwitchView) findViewById(R.id.network_button_id);
         blueboot_button = (SwitchView) findViewById(R.id.blueboot_button_id);
+
+        //缓存
+        cacle = (LinearLayout)findViewById(R.id.cacle);
+        cacle_size = (TextView)findViewById(R.id.cacle_size);
     }
 
     @Override
@@ -156,6 +179,11 @@ public class MyPagerSystemSettingActivity  extends Activity implements View.OnCl
             case R.id.blueboot_lineaLayout_id:
                 blueboot_isOn2 = blueboot_button.getIsOn();
                 blueboot_button.setIsOn(!blueboot_isOn2);
+                break;
+            case  R.id.cacle:
+                glideCacheUtil .clearImageAllCache(MyPagerSystemSettingActivity.this);
+                Toast.makeText(MyPagerSystemSettingActivity.this,"正在清理缓存",Toast.LENGTH_SHORT).show();
+                cacle_size.setText(glideCacheUtil.getCacheSize(MyPagerSystemSettingActivity.this));
                 break;
         }
     }

@@ -258,6 +258,63 @@ android:orientation="vertical">
 
 
 
+   <!--本地设置-->
+    <TextView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#8E8E8E"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:text="本地设置"
+        android:padding="15dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/cacle"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="清理缓存"
+            android:layout_marginTop="1dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/cacle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00"
+            android:layout_marginTop="1dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载路径"
+        android:padding="15dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
 
 <TextView
     android:background="#FFFFFF"

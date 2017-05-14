@@ -366,6 +366,4 @@ public class DashboardView extends View {
         return fontMetrics.descent - fontMetrics.ascent;
     }
 
-
-
 }

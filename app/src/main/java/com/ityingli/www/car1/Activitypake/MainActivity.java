@@ -166,19 +166,16 @@ public class MainActivity extends SlidingFragmentActivity implements View.OnClic
              editor.putString("Language","2");//并且把他设置为跟系统默认,并且我们把他保存进去，以后系统改语言的时候，我们的语言照样不会改动
               editor.commit();
               Toast.makeText(this,"当前语言为:"+language,Toast.LENGTH_SHORT).show();
-
-          }else if(language.equals("CA")  ){
+          }else if(language.equals("CA") |language.equals("US")  ){
              configuration.locale = Locale.ENGLISH;    //英文
              editor.putString("Language","3");                             //并且把他设置为跟系统默认
               editor.commit();
               Toast.makeText(this,"当前语言为:"+language,Toast.LENGTH_SHORT).show();
-
           }else if(language.equals("CN")){
              configuration.locale = Locale.SIMPLIFIED_CHINESE;//简体中文
              editor.putString("Language","1");                              //并且把他设置为跟系统默认
               editor.commit();
               Toast.makeText(this,"当前语言为:"+language,Toast.LENGTH_SHORT).show();
-
           }
         resoureces.updateConfiguration(configuration,displayMetrics);
     }
@@ -188,7 +185,7 @@ public class MainActivity extends SlidingFragmentActivity implements View.OnClic
         Locale locale  = Locale.getDefault();
         //language = locale.getLanguage();
         language = locale.getCountry();
-        //英语的时候显示CA
+        //英语的时候显示CA 或者US
         //简体为CN
         //繁体的时候为TW
     }
